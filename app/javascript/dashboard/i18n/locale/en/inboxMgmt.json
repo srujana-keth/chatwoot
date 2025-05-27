@@ -222,6 +222,7 @@
         "DESC": "Start supporting your customers via WhatsApp.",
         "PROVIDERS": {
           "LABEL": "API Provider",
+          "WHATSAPP_EMBEDDED": "WhatsApp Business (Embedded Signup)",
           "TWILIO": "Twilio",
           "WHATSAPP_CLOUD": "WhatsApp Cloud",
           "360_DIALOG": "360Dialog"
@@ -264,6 +265,18 @@
           "WEBHOOK_VERIFICATION_TOKEN": "Webhook Verification Token"
         },
         "SUBMIT_BUTTON": "Create WhatsApp Channel",
+        "EMBEDDED_SIGNUP": {
+          "TITLE": "Quick Setup with Meta",
+          "DESC": "Connect your WhatsApp Business Account directly through Meta's secure signup flow.",
+          "BENEFITS": {
+            "TITLE": "Benefits of Embedded Signup:",
+            "EASY_SETUP": "One-click setup with no manual configuration required",
+            "SECURE_AUTH": "Secure OAuth-based authentication with Meta",
+            "AUTO_CONFIG": "Automatic webhook and phone number configuration"
+          },
+          "SUBMIT_BUTTON": "Connect with WhatsApp Business",
+          "PROCESSING": "Setting up your WhatsApp Business Account..."
+        },
         "API": {
           "ERROR_MESSAGE": "We were not able to save the WhatsApp channel"
         }

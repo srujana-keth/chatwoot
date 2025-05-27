@@ -34,11 +34,15 @@
       window.chatwootConfig = {
         hostURL: '<%= ENV.fetch('FRONTEND_URL', '') %>',
         helpCenterURL: '<%= ENV.fetch('HELPCENTER_URL', '') %>',
-        fbAppId: '<%= @global_config['FB_APP_ID'] %>',
+        fbAppId: '<%= @global_config['FB_APP_ID'] || @global_config['WHATSAPP_APP_ID'] %>',
         instagramAppId: '<%= @global_config['INSTAGRAM_APP_ID'] %>',
         googleOAuthClientId: '<%= ENV.fetch('GOOGLE_OAUTH_CLIENT_ID', nil) %>',
         googleOAuthCallbackUrl: '<%= ENV.fetch('GOOGLE_OAUTH_CALLBACK_URL', nil) %>',
-        fbApiVersion: '<%= @global_config['FACEBOOK_API_VERSION'] %>',
+        fbApiVersion: '<%= @global_config['FACEBOOK_API_VERSION'] || @global_config['WHATSAPP_GRAPH_API_VERSION'] %>',
+        whatsappAppId: '<%= @global_config['WHATSAPP_APP_ID'] %>',
+        whatsappConfigurationId: '<%= @global_config['WHATSAPP_CONFIGURATION_ID'] %>',
+        whatsappPartnerId: '<%= @global_config['WHATSAPP_PARTNER_ID'] %>',
+        whatsappGraphApiVersion: '<%= @global_config['WHATSAPP_GRAPH_API_VERSION'] %>',
         signupEnabled: '<%= @global_config['ENABLE_ACCOUNT_SIGNUP'] %>',
         isEnterprise: '<%= @global_config['IS_ENTERPRISE'] %>',
         <% if @global_config['IS_ENTERPRISE'] %>
